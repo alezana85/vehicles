@@ -10,9 +10,11 @@ build_histogram = st.checkbox('Construir un histograma')
 # contruir un Histograma con el boton con checkbox
 if build_histogram:
     st.write('Creación un histograma con los datos')    
-    fig_hist = px.histogram(car_data, x='odomoter')
+    fig = px.histogram(car_data, x='odomoter')
+    fig.show()
 
 if buil_scatter:
     st.write('Crea un grafico de Dispersion con los datos')
-    fig_scatter = px.scatter(car_data, x="odometer", y="price", color='model')
+    fig = px.scatter(car_data, x="odometer", y="price", color='model')
+    fig.show()
     
