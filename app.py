@@ -10,7 +10,7 @@ build_histogram = st.checkbox('Construir un histograma')
 # contruir un Histograma con el boton con checkbox
 if build_histogram:
     st.write('Creación un histograma con los datos')    
-    fig = px.histogram(car_data, x='odomoter')
+    fig = px.histogram(car_data, x="odometer")
     fig.show()
 
 if buil_scatter:
