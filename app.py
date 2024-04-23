@@ -10,7 +10,7 @@ build_histogram = st.checkbox('Construir un histograma')
 # contruir un Histograma con el boton con checkbox
 if build_histogram:
     st.write('Creación un Histograma con los datos <img src="histogram_image.png" style="width:100px;">', unsafe_allow_html=True)    
-    fig_histogram = px.histogram(car_data, x='odometer', color_discrete_sequence=['#0E0E52', '#3943B7', '#78C0E0'])
+    fig_histogram = px.histogram(car_data, x='odometer', color_discrete_sequence=['#E26D5A'])
     st.plotly_chart(fig_histogram, use_container_width=True)
 
 if build_scatter:
